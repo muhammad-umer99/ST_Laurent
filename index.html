@@ -14,7 +14,7 @@
 
     <!------------ css link ------------->
     <link rel="stylesheet" href="Assets/Css/style.css" />
-    <link rel="stylesheet" href="Assets/Css/media.css">
+    <link rel="stylesheet" href="Assets/Css/media.css" />
 
     <!---------------------- icons link --------------->
     <link
@@ -30,7 +30,6 @@
     <!-- Top Bar  -->
     <div class="top-bar">
       <div class="top-bar-content">
-        <!-- Top bar Left content -->
         <div class="top-bar-left-content">
           <a href="" class="phone-icon">
             <i class="fa-solid fa-phone fa-flip-horizontal top-bar-icon"></i>
@@ -41,7 +40,6 @@
             info@stlaurentme.com
           </a>
         </div>
-        <!-- Top bar right content -->
         <div class="top-bar-right-content">
           <a href="" class="top-bar-links">Financement</a>
           <a href="" class="top-bar-links">Boutique en ligne</a>
@@ -55,20 +53,22 @@
         </div>
       </div>
     </div>
-    <!-- Neavigation Bar -->
+
+    <!-- Navigation Bar -->
     <header>
       <!-- Main Navbar -->
       <nav>
         <div class="logo">
           <img
-            src="Assets/Images/logo.png "
+            src="Assets/Images/logo.png"
             width="220px"
             alt=""
             class="logo-image"
           />
         </div>
-
-        <!-- Nav List -->
+        <div class="menu-icon" onclick="toggleMenu()">
+          <i class="fa-solid fa-bars"></i>
+        </div>
         <ul class="list-items">
           <li><a href="#">à propos</a></li>
           <li><a href="#">Visage</a></li>
@@ -77,17 +77,11 @@
           <li><a href="#">Produits</a></li>
           <li><a href="#">Tarifs</a></li>
           <li><a href="#">succursales</a></li>
-          <a href="#" class="head-btn"
-            >Prendre rendez-vous
-            <img src="Assets/Images/arrow-icon.png" alt="" class="arrow-icon"
-          /></a>
+          <a href="#" class="head-btn">
+            Prendre rendez-vous
+            <img src="Assets/Images/arrow-icon.png" alt="" class="arrow-icon" />
+          </a>
         </ul>
-
-        <!-- btn -->
-        <!-- <div class="btn-bg">
-          <i class="bx bx-user" style="color: #ffffff"></i>
-          <a href="#" class="main-btn">Sign Up</a>
-        </div> -->
       </nav>
     </header>
 

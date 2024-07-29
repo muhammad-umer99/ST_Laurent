@@ -27,6 +27,9 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
+
+// 2
+
 var swiper = new Swiper(".swiper", {
   slidesPerView: 2.5,
   spaceBetween: 20,
@@ -48,13 +51,16 @@ var swiper = new Swiper(".swiper", {
       slidesPerView: 2,
     },
     768: {
-      slidesPerView: 3,
+      slidesPerView: 2,
     },
     1000: {
-      slidesPerView: 2.5,
+      slidesPerView: 2,
     },
   },
 });
+
+
+// Tabs
 
 function openTab(tabId) {
   // Get all tab buttons and contents
@@ -76,3 +82,10 @@ function openTab(tabId) {
 document.addEventListener("DOMContentLoaded", () => {
   openTab("tab1");
 });
+
+
+
+function toggleMenu() {
+  const menu = document.querySelector('.list-items');
+  menu.classList.toggle('show');
+}
