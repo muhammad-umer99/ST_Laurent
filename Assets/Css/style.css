@@ -177,7 +177,9 @@ nav ul li a {
   font-size: 16px;
   text-transform: capitalize;
 }
-
+.hero-img{
+  margin-bottom: -120px;
+}
 .hero-text {
   margin-left: 80px;
   color: var(--white-text-color);
