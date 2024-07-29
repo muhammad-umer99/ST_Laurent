@@ -111,3 +111,36 @@ var swiper = new Swiper(".swiper-product-container", {
     },
   },
 });
+
+// rewies
+var swiper = new Swiper(".swiper-reviews", {
+  slidesPerView: 3,
+  spaceBetween: 20,
+  loop: true,
+  grabCursor: true,
+  pagination: {
+    el: ".custom-pagination", // Your custom pagination container
+    clickable: true,
+    renderBullet: function (index, className) {
+      // Customize how bullets are rendered
+      return '<span class="' + className + '"></span>';
+    },
+  },
+  breakpoints: {
+    0: {
+      slidesPerView: 1,
+    },
+    520: {
+      slidesPerView: 2,
+    },
+    768: {
+      slidesPerView: 2,
+    },
+    1000: {
+      slidesPerView: 3,
+    },
+    1024: {
+      slidesPerView: 3,
+    },
+  },
+});
