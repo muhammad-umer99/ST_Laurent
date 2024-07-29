@@ -7,10 +7,6 @@ document.addEventListener("DOMContentLoaded", function () {
       el: ".swiper-pagination",
       clickable: true,
     },
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
-    },
     simulateTouch: false, // Disable slide change using mouse drag or touch
     allowTouchMove: false, // Disable touch-based slide changes
     breakpoints: {
@@ -86,3 +82,32 @@ function toggleMenu() {
   const menu = document.querySelector(".list-items");
   menu.classList.toggle("show");
 }
+
+// 3
+var swiper = new Swiper(".swiper-product-container", {
+  slidesPerView: 3,
+  spaceBetween: 20,
+  loop: true,
+  grabCursor: true,
+  navigation: {
+    nextEl: ".product-slider-next-arrow",
+    prevEl: ".product-slider-back-arrow",
+  },
+  breakpoints: {
+    0: {
+      slidesPerView: 1,
+    },
+    520: {
+      slidesPerView: 2,
+    },
+    768: {
+      slidesPerView: 2,
+    },
+    1000: {
+      slidesPerView: 3,
+    },
+    1024: {
+      slidesPerView: 3,
+    },
+  },
+});
