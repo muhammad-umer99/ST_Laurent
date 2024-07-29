@@ -19,7 +19,7 @@
     cursor: pointer;
     position: fixed;
     top: 15px;
-    right: 20px;
+    right: 40px;
     z-index: 1001;
   }
 
@@ -81,7 +81,7 @@
   /* HERO SECTION */
 
   .hero-section {
-    margin: 20px 10px;
+    margin: 20px 20px;
     height: auto;
     border-radius: 20px;
   }
@@ -89,7 +89,7 @@
   .hero-container {
     flex-direction: column;
     align-items: center;
-    padding: 10px 0 0px 0px;
+    padding: 20px 0 0px 0px;
   }
 
   .hero-text {
@@ -104,13 +104,17 @@
     width: 320px;
   }
 
+  .hero-imgage-div {
+    align-items: center;
+  }
   .hero-btn {
     margin-top: 10px;
     font-size: 14px;
     padding: 10px 15px;
   }
   .hero-img {
-    height: 300px;
+    height: 400px;
+    margin: 0px;
   }
 
   .swiper-pagination {
@@ -214,6 +218,7 @@
   }
   .treatment-card-text {
     font-size: 15px;
+    width: 300px;
   }
   .icon-treatment {
     margin-top: -60px;
@@ -275,6 +280,18 @@
   }
   .logo-slider-img {
     height: 100px;
+  }
+  /* -----PRODUCT------ */
+  .product {
+    padding: 100px 20px 80px 20px;
+  }
+  /* ----------REVIEWS---------- */
+  .reviews-container {
+    margin: 0px 20px;
+  }
+  /* ---------CONSULATION____ */
+  .consulation {
+    margin: 0px 20px;
   }
 }
 

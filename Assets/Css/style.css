@@ -15,6 +15,87 @@
   --section-bg: #f8f3ec;
 }
 
+/* Buttons */
+
+.primary-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 10px;
+  text-decoration: none;
+  background: var(--black-text-color);
+  color: var(--white-text-color);
+  padding: 13px 30px;
+  font-size: 16px;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 400;
+  border-radius: 30px;
+  cursor: pointer;
+  position: relative;
+  border: none;
+}
+
+.primary-btn i {
+  color: black;
+  background: var(--white-text-color);
+  padding: 5px;
+  border-radius: 50%;
+  transition: background 0.3s, color 0.3s;
+}
+
+.primary-btn:hover {
+  background: var(--white-text-color);
+  color: var(--first-black-text-color);
+  border: 1px solid var(--black-text-color);
+}
+
+.primary-btn:hover i {
+  color: var(--white-text-color);
+  background: var(--first-black-text-color);
+}
+
+/* Secondary button */
+/* Base styling for the button */
+.second-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 10px;
+  text-decoration: none;
+  background: none;
+  color: var(--white-text-color);
+  padding: 13px 30px;
+  font-size: 16px;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 400;
+  border-radius: 30px;
+  cursor: pointer;
+  position: relative;
+  border: 1px solid var(--white-text-color);
+}
+
+/* Icon styling */
+.second-btn i {
+  color: var(--black-text-color);
+  background: var(--white-text-color);
+  padding: 5px;
+  border-radius: 50%;
+  transition: background 0.3s, color 0.3s;
+}
+
+/* Hover state for the button */
+.second-btn:hover {
+  background: var(--white-text-color);
+  color: var(--first-black-text-color);
+  border: 1px solid var(--black-text-color);
+}
+
+/* Hover state for the icon */
+.second-btn:hover i {
+  color: var(--white-text-color);
+  background: var(--black-text-color);
+}
+
 /* default Css reset */
 * {
   padding: 0;
@@ -370,7 +451,7 @@ nav ul li a {
 }
 .treatment-slider-next-arrow,
 .treatment-slider-back-arrow {
-  padding: 30px;
+  padding: 25px;
   font-size: 16px;
   border-radius: 50%;
   border: 1px solid var(--first-black-text-color);
@@ -394,8 +475,8 @@ nav ul li a {
   justify-content: center;
   flex-direction: column;
   background: var(--white-text-color);
-  padding: 30px 0px 30px 0px;
-  row-gap: 10px;
+  padding: 35px 0px 35px 0px;
+  row-gap: 15px;
   text-align: center;
   border-radius: 10px;
 }
@@ -403,8 +484,10 @@ nav ul li a {
   width: 440px;
 }
 .icon-treatment {
-  margin-top: -80px;
+  margin-top: -70px;
+  width: 110px;
 }
+
 .treatment-card-heading {
   font-size: 30px;
   font-weight: bold;
@@ -512,7 +595,7 @@ nav ul li a {
 }
 .tab-btn {
   margin: 20px 0px 0px 0px;
-  width: 210px;
+  width: 240px;
   font-size: 16px;
   font-family: "DM Sans", sans-serif;
 }
@@ -592,7 +675,7 @@ nav ul li a {
 
 .product-slider-next-arrow,
 .product-slider-back-arrow {
-  padding: 30px;
+  padding: 25px;
   font-size: 16px;
   border-radius: 50%;
   border: 1px solid var(--first-black-text-color);
@@ -719,4 +802,27 @@ nav ul li a {
 /* Active Bullet */
 .custom-pagination .swiper-pagination-bullet-active {
   background-color: black;
+}
+
+/* ---------CONSULATION____ */
+.consulation {
+  margin: 0px 60px;
+  padding: 80px 0px;
+}
+.consulation-container {
+  background-image: url(/Assets/Images/consultant.png);
+  background-position: center;
+  border-radius: 30px;
+  height: 350px;
+  padding: 0px 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.consutaion-heading {
+  font-weight: bold;
+  font-family: "Cormorant Garamond", serif;
+  font-size: 40px;
+  color: var(--white-text-color);
+  width: 630px;
 }
