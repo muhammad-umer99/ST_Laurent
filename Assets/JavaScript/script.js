@@ -27,7 +27,6 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
-
 // 2
 
 var swiper = new Swiper(".swiper", {
@@ -39,8 +38,8 @@ var swiper = new Swiper(".swiper", {
   fade: "true",
   grabCursor: "true",
   navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
+    nextEl: ".treatment-slider-next-arrow",
+    prevEl: ".treatment-slider-back-arrow",
   },
 
   breakpoints: {
@@ -59,7 +58,6 @@ var swiper = new Swiper(".swiper", {
     1024: { slidesPerView: 2.5 },
   },
 });
-
 
 // Tabs
 
@@ -84,9 +82,7 @@ document.addEventListener("DOMContentLoaded", () => {
   openTab("tab1");
 });
 
-
-
 function toggleMenu() {
-  const menu = document.querySelector('.list-items');
-  menu.classList.toggle('show');
+  const menu = document.querySelector(".list-items");
+  menu.classList.toggle("show");
 }

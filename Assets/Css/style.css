@@ -40,7 +40,7 @@ header {
   align-items: center;
   justify-content: space-between;
 }
-.top-bar-icons-group{
+.top-bar-icons-group {
   display: flex;
   align-items: center;
   column-gap: 8px;
@@ -347,13 +347,37 @@ nav ul li a {
   margin: 120px 0px 0px;
 }
 .treatment-section-heding-slider-btns {
-  height: 130px;
+  height: 160px;
+  display: flex;
+  align-items: center;
+  padding-bottom: 50px;
+  justify-content: space-between;
 }
 .treatment-heading {
   font-size: 40px;
   line-height: 40px;
   font-family: "Cormorant Garamond", serif;
-  text-align: center;
+  width: 70%;
+  text-align: end;
+}
+.treatment-card-btns {
+  margin: 0px 60px 0px 0px;
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+}
+.treatment-slider-next-arrow,
+.treatment-slider-back-arrow {
+  padding: 30px;
+  font-size: 16px;
+  border-radius: 50%;
+  border: 1px solid var(--first-black-text-color);
+  cursor: pointer;
+}
+.treatment-slider-next-arrow:hover,
+.treatment-slider-back-arrow:hover {
+  background: black;
+  color: white;
 }
 .treatment-slider-container {
   background: var(--section-bg);
