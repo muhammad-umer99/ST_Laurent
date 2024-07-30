@@ -1,4 +1,5 @@
 /* Responsive Styles for Mobile */
+
 @media only screen and (min-width: 320px) and (max-width: 480px) {
   /* General Navigation Styles */
   .top-bar {
@@ -542,54 +543,12 @@
 
 @media only screen and (min-width: 881px) and (max-width: 1024px) {
   .top-bar {
-    height: 50px;
-  }
-  .top-bar-content {
-    padding: 12px 0;
-    margin: 0 50px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    display: none;
   }
 
   /* Header */
   nav {
-    margin: 0 50px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-
-  nav ul li {
-    margin: 0 10px;
-  }
-  nav ul li a {
-    font-size: 14px;
-  }
-  .head-btn {
-    margin-left: 4px;
-    background-color: var(--first-black-text-color);
-    color: var(--white-text-color);
-    text-decoration: none;
-    padding: 12px 20px;
-
-    border-radius: 60px;
-    display: flex;
-    align-items: center;
-    column-gap: 5px;
-    font-size: 13px;
-  }
-  .menu-icon {
-    display: none;
-    cursor: pointer;
-  }
-  .menu-icon i {
-    font-size: 24px;
-    color: var(--text-color);
-  }
-
-  .logo-image {
-    width: 170px;
+    margin: 0 60px;
   }
 
   /* Hero Section Styles */
@@ -664,9 +623,9 @@
 }
 
 /* Responsive Styles */
-@media (max-width: 880px) {
+@media (max-width: 1024px) {
   nav {
-    margin: 0 20px;
+    margin: 10 40px;
   }
 
   nav .menu-icon {

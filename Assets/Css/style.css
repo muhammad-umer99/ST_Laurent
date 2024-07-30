@@ -199,6 +199,12 @@ nav ul {
 nav ul li {
   margin: 0 12px;
 }
+nav ul li::after {
+  content: " +";
+  margin-left: 2px;
+  color: black;
+  font-weight: bold;
+}
 
 nav ul li a {
   color: var(--text-color);
