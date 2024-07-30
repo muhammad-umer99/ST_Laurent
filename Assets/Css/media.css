@@ -10,6 +10,50 @@
     width: 150px;
     margin-top: 8px;
   }
+  /* Header */
+  nav {
+    margin: 10 20px;
+  }
+
+  nav .menu-icon {
+    display: block;
+  }
+
+  nav ul {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: white;
+    width: 100%;
+    max-width: 300px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    z-index: 1000;
+    border-radius: 20px;
+  }
+
+  nav ul.show {
+    display: flex;
+  }
+
+  nav ul li {
+    margin: 10px 0;
+  }
+
+  nav ul li a {
+    font-size: 18px;
+  }
+
+  nav .primary-btn {
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+  }
+  .primary-btn {
+    width: 252px;
+  }
   /* HERO SECTION */
 
   .hero-section {
@@ -99,6 +143,9 @@
     border-radius: 30px;
     font-size: 15px;
   }
+  button.primary-btn.new-letter {
+    width: 300px;
+}
 
   /* -------------SECTION 4-------------- */
   .section-4 {
@@ -200,7 +247,7 @@
     font-size: 15px;
   }
   .tab-btn {
-    width: 210px;
+    width: 230px;
     font-size: 15px;
   }
 
@@ -291,12 +338,52 @@
     margin-top: 40px;
   }
 }
-@media only screen and (min-width: 481px) and (max-width: 880px) {
+@media only screen and (min-width: 481px) and (max-width: 768px) {
   /* General Navigation Styles */
   .top-bar {
     display: none;
   }
+  /* Header */
+  nav {
+    margin: 10 40px;
+  }
 
+  nav .menu-icon {
+    display: block;
+  }
+
+  nav ul {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: white;
+    width: 100%;
+    max-width: 300px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    z-index: 1000;
+    border-radius: 20px;
+  }
+
+  nav ul.show {
+    display: flex;
+  }
+
+  nav ul li {
+    margin: 10px 0;
+  }
+
+  nav ul li a {
+    font-size: 18px;
+  }
+  nav .primary-btn {
+    width: 100%;
+  }
+  a.primary-btn {
+    width: 240px;
+  }
   /* HERO SECTION */
 
   .hero-section {
@@ -381,6 +468,9 @@
     border-radius: 30px;
     font-size: 15px;
   }
+  button.primary-btn.new-letter {
+    width: 300px;
+}
 
   /* -------------SECTION 4-------------- */
   .section-4 {
@@ -541,14 +631,54 @@
   }
 }
 
-@media only screen and (min-width: 881px) and (max-width: 1024px) {
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
   .top-bar {
     display: none;
   }
 
   /* Header */
   nav {
-    margin: 0 60px;
+    margin: 10 40px;
+  }
+
+  nav .menu-icon {
+    display: block;
+  }
+
+  nav ul {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: white;
+    width: 100%;
+    max-width: 300px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    z-index: 1000;
+    border-radius: 20px;
+  }
+
+  nav ul.show {
+    display: flex;
+  }
+
+  nav ul li {
+    margin: 10px 0;
+  }
+
+  nav ul li a {
+    font-size: 18px;
+  }
+
+  nav .primary-btn {
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+  }
+  .primary-btn {
+    width: 232px;
   }
 
   /* Hero Section Styles */
@@ -619,52 +749,5 @@
   .insta-feed-post-grid,
   .tiktok-feed-post-grid {
     gap: 20px; /* Space between images */
-  }
-}
-
-/* Responsive Styles */
-@media (max-width: 1024px) {
-  nav {
-    margin: 10 40px;
-  }
-
-  nav .menu-icon {
-    display: block;
-  }
-
-  nav ul {
-    display: none;
-    flex-direction: column;
-    position: absolute;
-    top: 100%;
-    right: 0;
-    background-color: white;
-    width: 100%;
-    max-width: 300px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    z-index: 1000;
-    border-radius: 20px;
-  }
-
-  nav ul.show {
-    display: flex;
-  }
-
-  nav ul li {
-    margin: 10px 0;
-  }
-
-  nav ul li a {
-    font-size: 18px;
-  }
-
-  nav .primary-btn {
-    width: 100%;
-    text-align: center;
-    justify-content: center;
-  }
-  .primary-btn {
-    width: 232px;
   }
 }
