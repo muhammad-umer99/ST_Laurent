@@ -144,3 +144,8 @@ var swiper = new Swiper(".swiper-reviews", {
     },
   },
 });
+
+function toggleMenu() {
+  const menuItems = document.querySelector('.list-items');
+  menuItems.classList.toggle('show');
+}

@@ -5,79 +5,10 @@
     display: none;
   }
 
-  nav {
-    margin: 10px 20px 0 20px;
-    position: relative;
-  }
-
   .logo-image {
-    width: 140px;
+    width: 150px;
+    margin-top: 8px;
   }
-
-  .menu-icon {
-    display: block;
-    cursor: pointer;
-    position: fixed;
-    top: 15px;
-    right: 40px;
-    z-index: 1001;
-  }
-
-  .menu-icon i {
-    font-size: 24px;
-    color: var(--text-color);
-  }
-
-  .list-items {
-    display: none;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-    position: fixed;
-    top: 70px;
-    left: 0;
-    width: 100%;
-    height: calc(
-      100vh - 70px
-    ); /* Adjust height to account for space for logo */
-    background-color: white;
-    padding: 0 20px;
-    z-index: 1000;
-    overflow-y: auto;
-    overflow-x: hidden;
-  }
-
-  .list-items.show {
-    display: flex;
-  }
-
-  .list-items .logo {
-    display: flex;
-    justify-content: center;
-    margin-top: 20px;
-  }
-
-  .list-items .logo img {
-    width: 100px;
-  }
-
-  .list-items li {
-    margin: 10px 0;
-    text-align: center;
-    width: 100%;
-  }
-
-  .list-items li a {
-    text-align: center;
-    color: black;
-    font-size: 18px;
-    font-weight: 500;
-    text-decoration: none;
-    display: block;
-    width: 100%;
-    padding: 10px 0;
-  }
-
   /* HERO SECTION */
 
   .hero-section {
@@ -299,79 +230,6 @@
   /* General Navigation Styles */
   .top-bar {
     display: none;
-  }
-
-  nav {
-    margin: 10px 40px 0 40px;
-    position: relative;
-  }
-
-  .logo-image {
-    width: 140px;
-  }
-
-  .menu-icon {
-    display: block;
-    cursor: pointer;
-    position: fixed;
-    top: 15px;
-    right: 20px;
-    z-index: 1001;
-  }
-
-  .menu-icon i {
-    font-size: 24px;
-    color: var(--text-color);
-  }
-
-  .list-items {
-    display: none;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-    position: fixed;
-    top: 70px;
-    left: 0;
-    width: 100%;
-    height: calc(
-      100vh - 70px
-    ); /* Adjust height to account for space for logo */
-    background-color: white;
-    padding: 0 20px;
-    z-index: 1000;
-    overflow-y: auto;
-    overflow-x: hidden;
-  }
-
-  .list-items.show {
-    display: flex;
-  }
-
-  .list-items .logo {
-    display: flex;
-    justify-content: center;
-    margin-top: 20px;
-  }
-
-  .list-items .logo img {
-    width: 100px;
-  }
-
-  .list-items li {
-    margin: 10px 0;
-    text-align: center;
-    width: 100%;
-  }
-
-  .list-items li a {
-    text-align: center;
-    color: black;
-    font-size: 18px;
-    font-weight: 500;
-    text-decoration: none;
-    display: block;
-    width: 100%;
-    padding: 10px 0;
   }
 
   /* HERO SECTION */
@@ -692,5 +550,49 @@
   }
   .grid-img {
     width: 435px;
+  }
+}
+
+/* Responsive Styles */
+@media (max-width: 880px) {
+  nav {
+    margin: 0 20px;
+  }
+
+  nav .menu-icon {
+    display: block;
+  }
+
+  nav ul {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: white;
+    width: 100%;
+    max-width: 300px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    z-index: 1000;
+    border-radius: 20px;
+  }
+
+  nav ul.show {
+    display: flex;
+  }
+
+  nav ul li {
+    margin: 10px 0;
+  }
+
+  nav ul li a {
+    font-size: 18px;
+  }
+
+  nav .primary-btn {
+    width: 100%;
+    text-align: center;
+    justify-content: center;
   }
 }
