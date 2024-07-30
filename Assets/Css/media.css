@@ -224,8 +224,72 @@
   .consulation {
     margin: 0px 20px;
   }
-}
+  .consulation-container {
+    height: 350px;
+    padding: 0px 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  .consutaion-heading {
+    font-size: 30px;
+    color: var(--white-text-color);
+    text-align: center;
+    width: 260px;
+  }
 
+  /* POST FEED */
+  .post-feed-container {
+    margin: 0px 20px;
+    flex-direction: column;
+  }
+  .post-feed-heading {
+    font-size: 35px;
+    margin-bottom: 40px;
+  }
+  .instagram-titile,
+  .tiktok-titile {
+    column-gap: 20px;
+    font-size: 30px;
+  }
+  .insta-feed-post-grid,
+  .tiktok-feed-post-grid {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 10px;
+    justify-items: center;
+  }
+
+  .insta-feed-post,
+  .tiktok-feed-post {
+    width: 320px;
+  }
+  .post-feed-btns {
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .tiktok-account,
+  .insta-account {
+    font-size: 20px;
+
+    font-weight: 400px;
+    font-family: "DM Sans", sans-serif;
+  }
+
+  .post-feed-btns {
+    margin: 30px 0px 50px 0px;
+    row-gap: 20px;
+  }
+  a.feed-btn.primary-btn {
+    width: 290px;
+  }
+  .tiktok-post {
+    margin-top: 40px;
+  }
+}
 @media only screen and (min-width: 481px) and (max-width: 880px) {
   /* General Navigation Styles */
   .top-bar {
@@ -446,6 +510,34 @@
     align-items: center;
     height: 100%;
   }
+  /* Consutant */
+  .consulation {
+    margin: 0px 40px;
+  }
+
+  .consutaion-heading {
+    font-size: 30px;
+    color: var(--white-text-color);
+    text-align: start;
+    width: 400px;
+  }
+  .primary-btn {
+    width: 230px;
+  }
+
+  /* post */
+  .post-feed-container {
+    margin: 80px 40px;
+    flex-direction: column;
+    row-gap: 80px;
+  }
+  a.feed-btn.primary-btn {
+    width: 300px;
+  }
+  .insta-feed-post,
+  .tiktok-feed-post {
+    width: 320px; /* Set the width of the images */
+  }
 }
 
 @media only screen and (min-width: 881px) and (max-width: 1024px) {
@@ -551,6 +643,24 @@
   .grid-img {
     width: 435px;
   }
+
+  /* post */
+  .post-feed-container {
+    margin: 80px 40px;
+    flex-direction: column;
+    row-gap: 80px;
+  }
+  a.feed-btn.primary-btn {
+    width: 300px;
+  }
+  .insta-feed-post,
+  .tiktok-feed-post {
+    width: 400px; /* Set the width of the images */
+  }
+  .insta-feed-post-grid,
+  .tiktok-feed-post-grid {
+    gap: 20px; /* Space between images */
+  }
 }
 
 /* Responsive Styles */
@@ -594,5 +704,8 @@
     width: 100%;
     text-align: center;
     justify-content: center;
+  }
+  .primary-btn {
+    width: 232px;
   }
 }
