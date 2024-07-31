@@ -1,4 +1,10 @@
-// Initialize Swiper
+// Menu Toggle Code
+function toggleMenu() {
+  const menuItems = document.querySelector(".list-items");
+  menuItems.classList.toggle("show");
+}
+
+// Hero Slider
 document.addEventListener("DOMContentLoaded", function () {
   var swiper = new Swiper(".swiper-container", {
     loop: false,
@@ -23,7 +29,7 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
-// 2
+// Treatment Section Slider
 
 var swiper = new Swiper(".swiper", {
   slidesPerView: 2.5,
@@ -51,7 +57,8 @@ var swiper = new Swiper(".swiper", {
     1000: {
       slidesPerView: 2,
     },
-    1024: { slidesPerView: 2.5 },
+    1024: { slidesPerView: 2 },
+    1025: { slidesPerView: 2.5 },
   },
 });
 
@@ -112,7 +119,7 @@ var swiper = new Swiper(".swiper-product-container", {
   },
 });
 
-// rewies
+// Reviews Slider
 var swiper = new Swiper(".swiper-reviews", {
   slidesPerView: 3,
   spaceBetween: 20,
@@ -144,8 +151,3 @@ var swiper = new Swiper(".swiper-reviews", {
     },
   },
 });
-
-function toggleMenu() {
-  const menuItems = document.querySelector('.list-items');
-  menuItems.classList.toggle('show');
-}

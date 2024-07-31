@@ -242,12 +242,11 @@ nav .primary-btn {
 .hero-section {
   margin: 30px 60px 0;
   background-image: url(/Assets/Images/hero-bg.png);
-  background-size: cover; /* Ensure background image covers the section */
-  background-position: center; /* Center the background image */
-  height: 625px;
+  background-size: cover;
+  background-position: center;
   border-radius: 20px;
-  position: relative; /* Ensure the pagination can be positioned absolutely */
-  overflow: hidden; /* Hide any overflow to prevent partial images */
+  position: relative;
+  overflow: hidden;
 }
 
 .hero-slider-container {
@@ -262,16 +261,15 @@ nav .primary-btn {
 
 .swiper-slide {
   height: 100%;
-  width: 100%; /* Ensure each slide takes up full width */
-  box-sizing: border-box; /* Include padding and border in element’s total width and height */
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .hero-container {
   height: 100%;
   display: flex;
-  justify-content: space-between; /* Adjusted for better spacing */
-  align-items: center;
-  padding: 0 20px; /* Added padding for better spacing on smaller screens */
+  justify-content: space-between;
+  padding: 0 20px;
 }
 
 .hero-btn {
@@ -318,7 +316,7 @@ nav .primary-btn {
 
 .swiper-pagination {
   position: absolute;
-  bottom: 20px; /* Adjusted margin to ensure pagination is visible */
+  bottom: 20px;
   width: 100%;
   text-align: center;
 }
@@ -438,7 +436,7 @@ nav .primary-btn {
   grid-row-gap: 0px;
 }
 .grid-img {
-  width: 570px;
+  width: 580px;
 }
 
 /* ---------------------TREATMENT------------ */
@@ -846,7 +844,7 @@ nav .primary-btn {
 /* ----POST FEED-------- */
 .post-feed {
   background: var(--section-bg);
-  padding: 100px 0px;
+  padding: 100px 0px 80px 0px;
 }
 .post-feed-container {
   margin: 80px 60px;
@@ -899,6 +897,39 @@ nav .primary-btn {
   justify-content: space-between;
 }
 
+/* -------BENEFIT POST------ */
+.benefit-section {
+  margin: 30px 60px 120px;
+}
+.benefit-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.benefit-box {
+  display: flex;
+  align-items: center;
+  column-gap: 25px;
+}
+
+.benefit-icons {
+  height: 100px;
+}
+
+.benefit-box-heading {
+  font-size: 20px;
+  font-weight: bold;
+  font-family: "Cormorant Garamond", serif;
+  margin-bottom: 6px;
+}
+
+.benefit-box-para {
+  font-size: 15px;
+  font-weight: 400;
+  font-family: "DM Sans", sans-serif;
+}
+/* -------FOOOTER----------- */
 .footer {
   background-color: #838384;
   color: #ffffff;
@@ -913,7 +944,9 @@ nav .primary-btn {
   margin: 0 auto;
   padding: 0 20px;
 }
-
+.location-style {
+  width: 180px;
+}
 .footer-container {
   display: grid;
   max-width: 1200px;
@@ -982,23 +1015,10 @@ nav .primary-btn {
   display: flex;
   align-items: center;
   margin-bottom: 10px;
+  column-gap: 10px;
+  text-decoration: none;
   padding: 3px;
   color: var(--first-black-text-color);
-}
-
-.location-info i,
-.additional-info i,
-.contact-info i {
-  background-color: #ffffff;
-  /* color: #000000; */
-  padding: 15px;
-  border-radius: 50%;
-  margin-right: 10px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 24px;
-  height: 24px;
 }
 
 /* LOWER FOOTER */
@@ -1029,10 +1049,14 @@ nav .primary-btn {
 
 .links-column .link-item {
   flex: 1 1 30%; /* Three items per row */
+  text-decoration: none;
+  color: white;
 }
 
 .more-links-column .link-item {
   flex: 1 1 48%; /* Two items per row */
+  text-decoration: none;
+  color: white;
 }
 
 .footer-lower-column .link-item {
@@ -1049,4 +1073,19 @@ nav .primary-btn {
   justify-content: center;
   width: 24px; /* Icon container size */
   height: 24px;
+}
+.footer-icon-link {
+  text-decoration: none;
+}
+.footer-icon-group {
+  text-decoration: none;
+  display: flex;
+  margin-top: 20px;
+  align-items: center;
+  justify-content: center;
+  column-gap: 20px;
+}
+.footer-socail-icons {
+  width: 35px;
+  height: 35px;
 }
