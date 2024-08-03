@@ -1,6 +1,6 @@
 /* Responsive Styles for Mobile */
 
-@media only screen and (min-width: 320px) and (max-width: 480px) {
+@media screen and (max-width: 480px) {
   /* General Navigation Styles */
   .top-bar {
     display: none;
@@ -440,6 +440,7 @@
   }
   .hero-img {
     height: 325px;
+    margin-bottom: -120px;
   }
 
   .swiper-pagination {
@@ -743,15 +744,21 @@
   }
 
   .hero-text {
+    font-size: 30px;
     margin-left: 40px;
   }
-
+  h1.hero-heading {
+    font-size: 30px;
+    margin-bottom: 10px;
+  }
   .swiper-pagination.swiper-pagination-clickable.swiper-pagination-bullets.swiper-pagination-horizontal {
     bottom: 40px;
   }
   .hero-img {
-    height: 500px;
-    margin-bottom: -120px;
+    /* height: 550px; */
+    /* width: 300px; */
+    height: 400px;
+    /* margin-bottom: -95px; */
   }
   /* ----------------CHOICE SECTION------------ */
   .choice-section {
@@ -880,7 +887,7 @@
   }
   .insta-feed-post,
   .tiktok-feed-post {
-    width: 400px; /* Set the width of the images */
+    width: 350px; /* Set the width of the images */
   }
   .insta-feed-post-grid,
   .tiktok-feed-post-grid {

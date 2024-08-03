@@ -288,7 +288,7 @@ nav .primary-btn {
   text-transform: capitalize;
 }
 .hero-img {
-  margin-bottom: -120px;
+  margin-bottom: -20px;
 }
 .hero-text {
   margin-left: 80px;
@@ -1149,7 +1149,4 @@ nav .primary-btn {
   color: var(--white-text-color);
   transform-origin: 0 100px;
   text-transform: uppercase;
-}
-span {
-  padding: 7px;
 }
